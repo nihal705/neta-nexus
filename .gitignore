@@ -1,0 +1,27 @@
+# Nested repositories
+indian-politician-bios/
+
+# HTML files
+*.html
+*_files/
+
+# Data files (CSV, Excel, etc.)
+*.csv
+*.xlsx
+*.xls
+*.mhtml
+
+# Large data directories
+data/india-election-data/
+data/2026_elections_html/
+data/karnataka_2023/
+data/loksabha_2024_complete/
+data/state_assemblies_2013_2017/
+data/Tamilnadu_2021_assembly/
+data/india_elections_1977_2015/
+data/loksabha_2004_2019/
+
+# Backup files
+*.bak
+*.backup
+node_modules

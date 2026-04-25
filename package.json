@@ -1,0 +1,27 @@
+{
+  "name": "neta-nexus",
+  "version": "1.0.0",
+  "description": "India's Most Comprehensive Political Database Platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && uvicorn main:app --reload --host 0.0.0.0 --port 8000",
+    "setup": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "setup:windows": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "db:setup": "python scripts/setup_database.py",
+    "data:download": "python scripts/download_adr_data.py",
+    "data:import": "python scripts/import_candidates.py",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && uvicorn main:app --host 0.0.0.0 --port 8000",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:build": "docker-compose build"
+  },
+  "keywords": ["politics", "india", "elections", "candidates", "mla", "mp"],
+  "author": "NetaNexus",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
