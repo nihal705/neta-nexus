@@ -25,3 +25,8 @@ data/loksabha_2004_2019/
 *.bak
 *.backup
 node_modules
+
+*.env
+*.env.local
+*.env.production
+*.env.development

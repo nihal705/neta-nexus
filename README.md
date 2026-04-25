@@ -1,4 +1,4 @@
-# 🗳️ NetaNexus - Political Data Platform (Prototype)
+# NetaNexus - Political Data Platform (Prototype)
 
 [![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Prototype-yellow.svg)]()
@@ -61,6 +61,7 @@ python -m uvicorn main:app --reload
 # Start frontend (new terminal)
 cd frontend
 npm run dev
+```
 
 📊 Current Data
 Total Candidates: ~69,000
@@ -75,13 +76,26 @@ Frontend	React 18, Vite, Tailwind CSS
 Backend	FastAPI, Python 3.11
 Database	MySQL 8.0
 Deployment	Docker Ready
+
 📁 Project Structure
-text
+```text
 neta-nexus/
-├── backend/         # FastAPI backend
-├── frontend/        # React frontend  
-├── scripts/         # Utility scripts
-└── data/            # Data files (gitignored)
+├── backend/                 # FastAPI backend
+│   ├── routes/             # API endpoints
+│   ├── models.py           # Database models
+│   ├── database.py         # Database connection
+│   └── main.py             # Entry point
+├── frontend/               # React frontend
+│   ├── src/
+│   │   ├── components/     # Reusable components
+│   │   ├── pages/          # Page components
+│   │   ├── services/       # API services
+│   │   └── hooks/          # Custom hooks
+│   └── public/             # Static assets
+├── scripts/                # Utility scripts
+└── data/                   # Data files (gitignored)
+```
+
 🔧 Known Issues
 Duplicate candidates in search results
 
