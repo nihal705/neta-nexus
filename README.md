@@ -1,6 +1,6 @@
 # NetaNexus - Political Data Platform (Prototype)
 
-[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Prototype-yellow.svg)]()
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
@@ -13,7 +13,7 @@
 ## 🎯 Current Status
 
 | Feature | Status |
-|---------|--------|
+|---|---|
 | Database Schema | ✅ Complete |
 | Basic Search | ✅ Working |
 | Candidate Profiles | ✅ Basic |
@@ -34,7 +34,7 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/neta-nexus.git
+git clone https://github.com/nihal705/neta-nexus.git
 cd neta-nexus
 
 # Setup backend
@@ -63,70 +63,67 @@ cd frontend
 npm run dev
 ```
 
-📊 Current Data
-Total Candidates: ~69,000
+## 📊 Current Data
 
-States Covered: 11
+- **Total Candidates:** ~69,000
+- **States Covered:** 11
+- **Data Sources:** ADR, MyNeta, ECI
 
-Data Sources: ADR, MyNeta, ECI
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
-Layer	Technology
-Frontend	React 18, Vite, Tailwind CSS
-Backend	FastAPI, Python 3.11
-Database	MySQL 8.0
-Deployment	Docker Ready
+| Layer | Technology |
+|---|---|
+| Frontend | React 18, Vite, Tailwind CSS |
+| Backend | FastAPI, Python 3.11 |
+| Database | MySQL 8.0 |
+| Deployment | Docker Ready |
 
-📁 Project Structure
+## 📁 Project Structure
+
 ```text
 neta-nexus/
 ├── backend/                 # FastAPI backend
-│   ├── routes/             # API endpoints
-│   ├── models.py           # Database models
-│   ├── database.py         # Database connection
-│   └── main.py             # Entry point
-├── frontend/               # React frontend
+│   ├── routes/              # API endpoints
+│   ├── models.py            # Database models
+│   ├── database.py          # Database connection
+│   └── main.py              # Entry point
+├── frontend/                # React frontend
 │   ├── src/
-│   │   ├── components/     # Reusable components
-│   │   ├── pages/          # Page components
-│   │   ├── services/       # API services
-│   │   └── hooks/          # Custom hooks
-│   └── public/             # Static assets
-├── scripts/                # Utility scripts
-└── data/                   # Data files (gitignored)
+│   │   ├── components/      # Reusable components
+│   │   ├── pages/           # Page components
+│   │   ├── services/        # API services
+│   │   └── hooks/           # Custom hooks
+│   └── public/               # Static assets
+├── scripts/                 # Utility scripts
+└── data/                    # Data files (gitignored)
 ```
 
-🔧 Known Issues
-Duplicate candidates in search results
+## 🔧 Known Issues
 
-Incomplete state mapping for some candidates
+- Duplicate candidates in search results
+- Incomplete state mapping for some candidates
+- Missing candidate images
+- Mock data for parliamentary scores
+- No user authentication
 
-Missing candidate images
+## 🚧 Roadmap
 
-Mock data for parliamentary scores
+- Complete data import for all states
+- Fix duplicate candidate issue
+- Add real candidate images
+- Implement user authentication
+- Add live election results
+- Complete constituency maps
+- Add news aggregation
 
-No user authentication
+## 📝 License
 
-🚧 Roadmap
-Complete data import for all states
+This project is licensed under the [MIT License](LICENSE).
 
-Fix duplicate candidate issue
+## 👨‍💻 Author
 
-Add real candidate images
+G Nihal
 
-Implement user authentication
+## ⚠️ Disclaimer
 
-Add live election results
-
-Complete constituency maps
-
-Add news aggregation
-
-📝 License
-Proprietary License - All rights reserved. This is a private repository. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
-
-👨‍💻 Author
-NetaNexus Team
-
-⚠️ Disclaimer
 This is a prototype and work in progress. The data presented may be incomplete or inaccurate. This project is for demonstration purposes only. All data is sourced from public APIs (ADR, MyNeta, ECI).
